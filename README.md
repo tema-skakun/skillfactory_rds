@@ -1,66 +1,66 @@
-## 0. "Угадай число!":
+## module 0. "Guess the Number!"
 
-Компьютер загадывает целое число от 1 до 100, и его нужно угадать.
-Под «угадать», конечно, подразумевается «написать программу, которая угадывает число».
-В своем алгоритме использую выбор среднего значения диапазона. После каждой попытки уменьшаю диапазон, если угадываемое значение больше/меньше среднего.
+The computer guesses an integer from 1 to 100, and you have to guess it.
+By "guess", of course, we mean "write a programme that guesses the number".
+In my algorithm, I use selecting the middle value of the range. After each attempt, I reduce the range if the guessed value is larger/lower than the average.
 
 
-## 1. "Кто хочет стать миллионером кинопроката?":
+## module 1. "Who wants to be a film distribution millionaire?":
 
-### Задачи проекта:
+### Project Objectives:
 
-    примерить на себя роль аналитика в компании кинопроката.
-    провести свой первый анализ данных с помощью pandas.
+    Try on the role of an analyst at a film distribution company.
+    to conduct your first data analysis using pandas.
 
-## 2. Разведывательный анализ данных для проекта от UNICEF:
+## module 2. Exploratory data analysis for a project from UNICEF:
 
-UNICEF — международного подразделения ООН, чья миссия состоит в повышении уровня благополучия детей по всему миру.
+UNICEF, an international arm of the United Nations whose mission is to improve the well-being of children around the world.
 
-Суть проекта — отследить влияние условий жизни учащихся в возрасте от 15 до 22 лет на их успеваемость по математике, чтобы на ранней стадии выявлять студентов, находящихся в группе риска. И сделать это можно с помощью модели, которая предсказывала бы результаты госэкзамена по математике для каждого ученика школы. Чтобы определиться с параметрами будущей модели, проведите разведывательный анализ данных и составьте отчёт по его результатам.
+The point of the project is to track the impact of the living conditions of students aged 15 to 22 on their performance in maths, in order to identify at-risk students early on. And this can be done with the help of a model that would predict the results of the state maths exam for each student in the school. To decide on the parameters of the future model, conduct an exploratory data analysis and report on the results.
 
-### Основные цели и задачи проекта (EDA):
+### Main Project Goals and Objectives (EDA):
 
-    Сформулировать предположения и гипотезы для дальнейшего построения модели.
-    Проверить качество данных и очистить их, если это необходимо.
-    Определиться с параметрами модели.
+    Formulate assumptions and hypotheses to further build the model.
+    Check the quality of the data and cleanse it if necessary.
+    Decide on the parameters of the model.
 
-### Этапы работы над проектом:
+#### Project Work Stages:
 
-    Провести первичную обработку данных.
-    Посмотреть на распределение признаков для числовых переменных, устранить выбросы.
-    Оценить количество уникальных значений для номинативных переменных.
-    По необходимости преобразовать данные.
-    Провести корреляционный анализ количественных переменных.
-    Отобрать переменные, которые не коррелируют.
-    Проанализировать номинативные переменные и устранить те, которые не влияют на предсказываемую величину.
-    Сформулировать выводы относительно качества данных и тех переменных, которые мы будем использовать в дальнейшем построении модели.
+    Conduct initial data processing.
+    Look at the distribution of signs for numeric variables, eliminate outliers.
+    Estimate the number of unique values for nominal variables.
+    Transform the data as necessary.
+    Conduct correlation analyses for quantitative variables.
+    Select variables that are not correlated.
+    Analyse nominative variables and eliminate those that do not affect the predicted value.
+    Formulate conclusions regarding the quality of the data and the variables that we will use in the further construction of the model.
 
-## 3. Проект для компании TripAdvisor:
+## module 3. Project for TripAdvisor:
 
-### Задача:
-Одна из проблем компании — это нечестные рестораны, которые накручивают себе рейтинг. Одним из способов нахождения таких ресторанов является построение модели, которая предсказывает рейтинг ресторана. Если предсказания модели сильно отличаются от фактического результата, то, возможно, ресторан играет нечестно, и его стоит проверить.
+### Task:
+One of the company's problems is dishonest restaurants that inflate their ratings. One way to find such restaurants is to build a model that predicts the restaurant's rating. If the model's predictions are very different from the actual result, then perhaps the restaurant is not playing fair and should be checked out.
 
-### Этапы выполнения проекта:
-    Добавите новые данные в исходный датасет.
-    Сделайть разведку новых признаков. Использовать визуализацию, поиск уникальных значений, очистку и поиск выбросов там, где это необходимо.
-    Включить новые признаки в анализ основных переменных, оценить их важность и вклад для модели, подумайть над тем, можно ли сгенерировать новые признаки на основе добавленных.
-    Получить новое значение ROC AUC для новой модели и попробовать улучшить ее результаты на основе подбора параметров регуляризации.
+#### Stages of the project:
+    Add new data to the original dataset.
+    Do reconnaissance of new attributes. Use visualisation, search for unique values, cleanup and look for outliers where appropriate.
+    Include the new features in the analysis of the main variables, assess their importance and contribution to the model, consider whether new features can be generated from the added ones.
+    Obtain a new ROC AUC value for the new model and try to improve its results based on fitting regularisation parameters.
 
-## 4. Проект для регионального банка:
+## module 4. Project for a regional bank:
 
-### Задача:
-Написать скоринговую модель предсказания дефолта клиентов банка.
+### Task:
+Write a scoring model for predicting default of bank customers.
 
-### Этапы выполнения проекта:
-    Добавьте новые данные в исходный датасет.
-    Сделайть разведку новых признаков. Использовать визуализацию, поиск уникальных значений, очистку и поиск выбросов там, где это необходимо.
-    Включить новые признаки в анализ основных переменных, оценить их важность и вклад для модели, подумайть над тем, можно ли сгенерировать новые признаки на основе добавленных.
-    Получить новое значение ROC AUC для новой модели и попробовать улучшить ее результаты на основе подбора параметров регуляризации.
+#### Project steps:
+    Add new data to the original dataset.
+    Do exploration of new features. Use visualisation, search for unique values, cleaning and outlier search where appropriate.
+    Include the new features in the analysis of the main variables, assess their importance and contribution to the model, consider whether new features can be generated from the added ones.
+    Obtain a new ROC AUC value for the new model and try to improve its results based on fitting regularisation parameters.
 
-## 5. Проект для компании, которая занимается продажей автомобилей с пробегом в Москве:
+## module 5. Project for a company that sells used cars in Moscow:
 
-### Задача:
-Максимально быстро находить выгодные предложения (купить ниже рынка, продать дороже рынка). Руководство компании просит создать модель, которая будет предсказывать стоимость автомобиля по его характеристикам. Это значительно ускорит работу менеджеров и повысит прибыль компании.
+### Task:
+To find favourable offers (buy below market, sell above market) as quickly as possible. The company's management asks to create a model that will predict the cost of a car based on its characteristics. This will significantly speed up the work of managers and increase the company's profit.
 
-### Результат работы
-В результате обучения различных моделей, наилучший результат показала XGBRegressor с параметром reg_lambda=1.5 В работе удалось создать модель, которая предсказывает стоимость автомобиля по его характеристикам. Эту модель можно использовать для выявления выгодных предложений, когда желаемая цена продавца ниже предсказанной рыночной цены.
+### The result of the work
+As a result of training different models, the best result was shown by XGBRegressor with the parameter reg_lambda=1.5 In the work we managed to create a model that predicts the cost of a car by its characteristics. This model can be used to identify favourable offers when the seller's desired price is lower than the predicted market price.
