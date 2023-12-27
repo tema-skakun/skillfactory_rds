@@ -5,14 +5,14 @@ By "guess", of course, we mean "write a programme that guesses the number".
 In my algorithm, I use selecting the middle value of the range. After each attempt, I reduce the range if the guessed value is larger/lower than the average.
 
 
-## module 1. "Who wants to be a film distribution millionaire?":
+## module 1. "Who wants to be a film distribution millionaire?"
 
 ### Project Objectives:
 
     Try on the role of an analyst at a film distribution company.
     to conduct your first data analysis using pandas.
 
-## module 2. Exploratory data analysis for a project from UNICEF:
+## module 2. Exploratory data analysis for a project from UNICEF
 
 UNICEF, an international arm of the United Nations whose mission is to improve the well-being of children around the world.
 
@@ -35,7 +35,7 @@ The point of the project is to track the impact of the living conditions of stud
     Analyse nominative variables and eliminate those that do not affect the predicted value.
     Formulate conclusions regarding the quality of the data and the variables that we will use in the further construction of the model.
 
-## module 3. Project for TripAdvisor:
+## module 3. Project for TripAdvisor
 
 ### Task:
 One of the company's problems is dishonest restaurants that inflate their ratings. One way to find such restaurants is to build a model that predicts the restaurant's rating. If the model's predictions are very different from the actual result, then perhaps the restaurant is not playing fair and should be checked out.
@@ -46,7 +46,7 @@ One of the company's problems is dishonest restaurants that inflate their rating
     Include the new features in the analysis of the main variables, assess their importance and contribution to the model, consider whether new features can be generated from the added ones.
     Obtain a new ROC AUC value for the new model and try to improve its results based on fitting regularisation parameters.
 
-## module 4. Project for a regional bank:
+## module 4. Project for a regional bank
 
 ### Task:
 Write a scoring model for predicting default of bank customers.
@@ -57,7 +57,7 @@ Write a scoring model for predicting default of bank customers.
     Include the new features in the analysis of the main variables, assess their importance and contribution to the model, consider whether new features can be generated from the added ones.
     Obtain a new ROC AUC value for the new model and try to improve its results based on fitting regularisation parameters.
 
-## module 5. Project for a company that sells used cars in Moscow:
+## module 5. Car Price Prediction
 
 ### Task:
 To find favourable offers (buy below market, sell above market) as quickly as possible. The company's management asks to create a model that will predict the cost of a car based on its characteristics. This will significantly speed up the work of managers and increase the company's profit.
