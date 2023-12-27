@@ -1,34 +1,33 @@
-# Проект 5. Выбираем авто выгодно
+# Project 5. Car Price Prediction
 
-## Задача
-Необходимо принять участие в соревновании по прогнозированию стоимости автомобиля по характеристикам на kaggle: https://www.kaggle.com/c/sf-dst-car-price-prediction
 
-## Описание
-Представьте, что вы работаете в компании, которая занимается продажей автомобилей с пробегом. Основная задача компании и ее менеджеров - максимально быстро находить выгодные предложения (проще говоря, купить ниже рынка, а продать дороже рынка).
-Вам поставлена задача создать модель, которая будет предсказывать стоимость автомобиля по его характеристикам. 
-Если наша модель работает хорошо, то мы сможем быстро выявлять выгодные предложения (когда желаемая цена продавца ниже предсказанной рыночной цены). Это значительно ускорит работу менеджеров и повысит прибыль компании.
+## Situation
+It is necessary to take part in a team competition to predict the cost of a car by characteristics on [kaggle](https://www.kaggle.com/c/sf-dst-car-price-prediction)
 
-## Данные
-Train датасета (для обучения моделей) нет. Нам его нужно собрать самим! Вспоминаем модуль по парсингу сайтов или ищем готовые датасеты. Данные соберем с сайта auto.ru
+Our team: Artem, Vadim, Evgeny
 
-## Условия соревнования:
-1. Данное соревнование является бессрочным и доступно для всех потоков.
-2. Срок выполнения соревнования устанавливаеться индивидуально в каждом потоке.
-3. Тестовая выборка представлена в ЛидерБорде целиком.
-4. По этому лучшие и победные решения буду проверяться на их "адекватность" (чтоб не было подгонки под тестовую выборку).
-5. Разрешено использовать внешние данные. (но их источник должен быть публичным и доступен всем участникам соревнования)
-6. Разрешено использовать любые ML алгоритмы и библиотеки. (кроме DL)
-7. Даже если удасться найти исходные объявления из теста - нельзя просто указать их цену. Делаем реальный ML продукт, который потом сможет нормально работать на новых данных.
 
-## Результат работы
-В результате обучения различных моделей, наилучший результат показала XGBRegressor с параметром reg_lambda=1.5 В работе удалось создать модель, которая предсказывает стоимость автомобиля по его характеристикам. Эту модель можно использовать для выявления выгодных предложений, когда желаемая цена продавца ниже предсказанной рыночной цены.
+## Task
+Imagine that you work for a company that sells used cars. The main task of the company and its managers is to find profitable offers as quickly as possible (buy below the market and sell more expensive than the market).
+You need to create a model that will predict the cost of a car based on its characteristics. 
+If your model works well, then you will be able to quickly identify profitable offers. This will significantly speed up the work of managers and increase the company's profit.
+It is allowed to use any ML algorithms and libraries (except DL).
+It is necessary to make a real ML product, which will then be able to work on new data.
+There is no Train dataset for training models. Let's collect data from the site auto.ru
 
-## В ходе работы над проектом было сделано:
-1. Составлен train датасет из данных с сайта auto.ru
-2. Дополнительно извлечены и сгенерированы новые признаки.
-3. Попробовали большое количество разных алгоритмов и библиотек ML
-4. Реализовали Stacking
-5. Выполнили постобработку предсказаний: учли изменения курса валюты (ввели поправочный коэффициент), округлил предсказанную цену до 1000.
 
-## Выводы
-Сильное различие в MAPE на обучающем и тестовом датасете могут быть связаны с различным периодом парсинга данных. Большинство моделей обучения (исключая линейную регрессию) показали близкие результаты. Дальнейшего улучшения прогноза можно достичь за счет подбора гипер параметров. К сожалению, ни один из компьютеров не смог выполнить полный подбор гипер параметров за разумное время. В связи с этим заметно переобучение на обучающем датасете.
+## Actions
+1. A train dataset has been compiled from data from the site auto.ru
+2. New features have been extracted and generated
+3. We have tried a large number of different algorithms and ML libraries
+4. Implemented Stacking
+5. We performed post-processing of predictions: we introduced a correction factor that takes into account changes in the exchange rate, rounded the predicted price to 1000 rubles.
+
+
+## Result
+In the process of working on the project, we trained various models, the best result was shown by XGBRegressor with the parameter reg_lambda=1.5.
+We managed to create a model that predicts the cost of a car based on its characteristics. This model can be used to identify profitable offers when the desired seller's price is lower than the predicted market price.
+
+
+## Reflections
+The strong difference in MAPE on the training and test dataset may be related to the different period of data parsing. Most learning models (excluding linear regression) showed similar results. Further improvement of the forecast can be achieved by selecting hyper parameters. Unfortunately, none of the computers were able to complete the full selection of hyper parameters in a reasonable time. In this regard, retraining on the training dataset is noticeable.
